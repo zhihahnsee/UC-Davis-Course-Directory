@@ -19,6 +19,6 @@ bool Physics::change_to_completed(bool completed) {
 // }
 
 std::ostream &operator<<(std::ostream &os, const Physics &course) {
-	os << "[Physics Course: " << course.course_name << ": " << course.units_worth << " units, " << course.completed << ".]";
+	os << "[Physics Course: " << course.course_name << ", " << course.units_worth << " units, " << course.completed << ".]";
 	return os;
 }
