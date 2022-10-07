@@ -19,6 +19,6 @@ bool ECE::change_to_completed(bool completed) {
 // }
 
 std::ostream &operator<<(std::ostream &os, const ECE &course) {
-	os << "[ECE Course: " << course.course_name << ": " << course.units_worth << " units, " << course.completed << ".]";
+	os << "[ECE Course: " << course.course_name << ": " << course.course_desc << ", " << course.units_worth << " units, " << course.completed << ".]";
 	return os;
 }
